@@ -1,0 +1,46 @@
+# Publish the gallery to R2 on every push to main:
+#   1. verify gallery.json is in published form (hashed asset URLs);
+#   2. upload every referenced screenshot to its immutable key
+#      (skip-if-exists is unnecessary: keys are content-addressed, so
+#      re-uploading writes identical bytes);
+#   3. upload gallery.json last, short-cached, so an index never points
+#      at assets that are not there yet.
+#
+# Repo secrets required:
+#   CLOUDFLARE_API_TOKEN  — token with R2 write on the bucket
+#   CLOUDFLARE_ACCOUNT_ID — the account that owns the bucket
+# Bucket name lives in R2_BUCKET below; the public domain lives in
+# scripts/publish.mjs (ASSET_BASE_URL).
+name: publish
+on:
+  push:
+    branches: [main]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      R2_BUCKET: stashbase-assets
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Verify published form
+        run: node scripts/publish.mjs --verify
+      - name: Upload screenshots (immutable)
+        run: |
+          node scripts/publish.mjs --list | while IFS=$'\t' read -r file key type; do
+            echo "put $key"
+            npx wrangler r2 object put "$R2_BUCKET/$key" \
+              --file "$file" \
+              --content-type "$type" \
+              --cache-control "public, max-age=31536000, immutable"
+          done
+      - name: Upload index (short cache)
+        run: |
+          npx wrangler r2 object put "$R2_BUCKET/gallery.json" \
+            --file gallery.json \
+            --content-type "application/json" \
+            --cache-control "public, max-age=120"
