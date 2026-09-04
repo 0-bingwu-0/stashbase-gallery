@@ -34,6 +34,7 @@ jobs:
           node scripts/publish.mjs --list | while IFS=$'\t' read -r file key type; do
             echo "put $key"
             npx wrangler r2 object put "$R2_BUCKET/$key" \
+              --remote \
               --file "$file" \
               --content-type "$type" \
               --cache-control "public, max-age=31536000, immutable"
@@ -41,6 +42,7 @@ jobs:
       - name: Upload index (short cache)
         run: |
           npx wrangler r2 object put "$R2_BUCKET/gallery.json" \
+            --remote \
             --file gallery.json \
             --content-type "application/json" \
             --cache-control "public, max-age=120"
