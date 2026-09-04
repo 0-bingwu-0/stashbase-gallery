@@ -20,7 +20,12 @@ https://cdn.jsdelivr.net/gh/0-bingwu-0/stashbase-gallery@main/gallery.json
 ```
 
 (jsDelivr rather than raw.githubusercontent.com so the index also resolves in
-regions where GitHub raw endpoints are unreliable.)
+regions where GitHub raw endpoints are unreliable.) jsDelivr caches `@main`
+for up to 12 hours; to make an edit visible immediately, hit
+
+```
+https://purge.jsdelivr.net/gh/0-bingwu-0/stashbase-gallery@main/gallery.json
+```
 
 ## Schema
 
