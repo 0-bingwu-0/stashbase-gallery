@@ -43,7 +43,7 @@ fields they do not recognize.
 ## Contributing
 
 Open a pull request that adds one entry to `gallery.json`. The bar matches the
-[selection criteria](https://stashbase.ai/github-knowledge-bases/#how-we-picked)
+[selection criteria](https://stashbase.ai/blog/github-knowledge-bases/#how-we-picked)
 used across StashBase: the knowledge must live **in** the repository, serve an
 identifiable reader, and stay useful with the network off.
 
