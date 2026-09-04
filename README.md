@@ -1,26 +1,22 @@
 # StashBase Gallery
 
 The curated gallery behind **Explore the Gallery** in [StashBase](https://stashbase.ai):
-ready-made Wikis you can download and use right away, plus Wiki prompt templates.
+ready-made Wikis you can download and use right away, starter prompts included.
 This repository **is** the backend — a static index consumed by the app and the
 website, updated by pull request, no server anywhere.
 
 ## How it works
 
-Everything lives in [`gallery.json`](./gallery.json):
-
-- **`wikis`** — finished, downloadable Wikis. Each entry points at a public git
-  repository where the whole Wiki lives in the files (clone it, disconnect, and
-  it still works). `starterPrompts` are questions worth asking the moment the
-  folder is open in StashBase.
-- **`templates`** — Wiki prompt templates (scenario presets). The set currently
-  shipped inside the app will migrate here.
+Everything lives in [`gallery.json`](./gallery.json). Each entry points at a
+public git repository where the whole Wiki lives in the files — clone it,
+disconnect, and it still works. `starterPrompts` are questions worth asking the
+moment the folder is open in StashBase.
 
 Consumers fetch the index at runtime and fall back to a bundled snapshot when
 offline:
 
 ```
-https://cdn.jsdelivr.net/gh/liliu-z/stashbase-gallery@main/gallery.json
+https://cdn.jsdelivr.net/gh/0-bingwu-0/stashbase-gallery@main/gallery.json
 ```
 
 (jsDelivr rather than raw.githubusercontent.com so the index also resolves in
