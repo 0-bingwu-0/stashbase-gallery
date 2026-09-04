@@ -6,7 +6,7 @@
       "id": "how-to-start-a-startup",
       "name": "How to Start a Startup",
       "category": "course",
-      "description": "Sam Altman's Stanford course with YC.",
+      "description": "Sam Altman's Stanford CS183B course with YC.",
       "contents": "20 lecture transcripts · distilled founder playbook · STASHBASE.md maintenance rules",
       "repo": "https://github.com/0-bingwu-0/stashbase-cs183b",
       "clone": "git clone https://github.com/0-bingwu-0/stashbase-cs183b",
