@@ -16,16 +16,13 @@ Consumers fetch the index at runtime and fall back to a bundled snapshot when
 offline:
 
 ```
-https://cdn.jsdelivr.net/gh/0-bingwu-0/stashbase-gallery@main/gallery.json
+https://assets.stashbase.ai/gallery.json
 ```
 
-(jsDelivr rather than raw.githubusercontent.com so the index also resolves in
-regions where GitHub raw endpoints are unreliable.) jsDelivr caches `@main`
-for up to 12 hours; to make an edit visible immediately, hit
-
-```
-https://purge.jsdelivr.net/gh/0-bingwu-0/stashbase-gallery@main/gallery.json
-```
+(An R2 bucket behind Cloudflare on our own domain — reliable in regions where
+GitHub endpoints are not. The `publish.yml` Action uploads `gallery.json` and
+the screenshot assets on every push to `main`; the index is short-cached, so
+an edit is live within minutes of merging.)
 
 ## Schema
 
