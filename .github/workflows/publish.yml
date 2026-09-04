@@ -29,11 +29,17 @@ jobs:
           node-version: 20
       - name: Verify published form
         run: node scripts/publish.mjs --verify
+      - name: Preflight (secrets + wrangler auth)
+        run: |
+          [ -n "$CLOUDFLARE_API_TOKEN" ] && echo "CLOUDFLARE_API_TOKEN: set" || { echo "::error::CLOUDFLARE_API_TOKEN secret is missing"; exit 1; }
+          [ -n "$CLOUDFLARE_ACCOUNT_ID" ] && echo "CLOUDFLARE_ACCOUNT_ID: set" || { echo "::error::CLOUDFLARE_ACCOUNT_ID secret is missing"; exit 1; }
+          npx wrangler@4 --version
+          npx wrangler@4 whoami
       - name: Upload screenshots (immutable)
         run: |
           node scripts/publish.mjs --list | while IFS=$'\t' read -r file key type; do
             echo "put $key"
-            npx wrangler r2 object put "$R2_BUCKET/$key" \
+            npx wrangler@4 r2 object put "$R2_BUCKET/$key" \
               --remote \
               --file "$file" \
               --content-type "$type" \
@@ -41,7 +47,7 @@ jobs:
           done
       - name: Upload index (short cache)
         run: |
-          npx wrangler r2 object put "$R2_BUCKET/gallery.json" \
+          npx wrangler@4 r2 object put "$R2_BUCKET/gallery.json" \
             --remote \
             --file gallery.json \
             --content-type "application/json" \
