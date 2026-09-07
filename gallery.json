@@ -1,7 +1,26 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-04",
+  "updated": "2026-09-07",
   "wikis": [
+    {
+      "id": "eccv-2026-orals",
+      "name": "ECCV 2026 Orals",
+      "category": "research",
+      "description": "A full-paper review of 26 ECCV 2026 oral papers.",
+      "contents": "26 paper summaries · 8 major trends · collaboration map · source manifest",
+      "repo": "https://github.com/0-bingwu-0/ECCV_26_oral",
+      "clone": "git clone https://github.com/0-bingwu-0/ECCV_26_oral",
+      "screenshots": [
+        "https://assets.stashbase.ai/wikis/eccv-2026-orals/screenshots/cover-51a694c5.jpeg"
+      ],
+      "files": [
+        "README.md",
+        "WIKI.md",
+        "manifest.csv",
+        "trends.html"
+      ],
+      "wikiPrompt": "You are an AI researcher and technical editor. Read all ECCV 2026 Oral paper PDFs in the current knowledge base and build a research wiki for AI engineers and technically curious readers.\n\nThe wiki should explain:\n\n- The major technical trends reflected in these papers\n- The new problems researchers are focusing on\n- The methods spreading across different research areas\n- Which directions are becoming established and which remain early explorations\n- The authors, institutions, and collaborations driving this work\n\n## Workflow\n\n1. Scan and read every PDF. For each paper, understand its research problem, core method, main contributions, experimental evidence, limitations, author affiliations, and available resources.\n2. Normalize the concepts and tags across papers by merging synonymous terms.\n3. Cluster the papers to identify technical trends, cross-domain methods, and collaboration patterns.\n4. Generate the final wiki and trend page, then verify paper counts, links, and supporting evidence.\n\nIf a PDF is incomplete or cannot be read reliably, report it instead of inferring its contents from the filename.\n\n## Trend Levels\n\n- Supported by at least 3 papers: **Major Trend**\n- Supported by 2 papers: **Emerging Signal**\n- Represented by 1 paper: **Independent Exploration**\n\nEvery trend must cite the specific papers supporting it. Do not label something a trend merely because its terminology is popular.\n\n## Outputs\n\nCreate only the following two files.\n\n### `WIKI.md`\n\nInclude every successfully processed paper with:\n\n- The paper title, linked to the local PDF using a relative path\n- A one-sentence explanation for a general technical audience\n- A small set of normalized tags\n- Any code, project pages, models, or datasets confirmed by the paper\n\nThe one-sentence explanation should state the problem and core idea without copying the abstract or using promotional language.\n\nDo not create separate pages for individual papers.\n\n### `trends.html`\n\nCreate a self-contained HTML page that opens directly in a browser and requires no external assets. It should present:\n\n- Major trends\n- Emerging signals and independent explorations\n- Methods spreading across research areas\n- Representative papers and evidence for each trend\n- Author, institution, and cross-institution collaboration signals\n- Why these developments matter to technical readers\n\nUse a modern research-editorial layout with a warm off-white background, dark gray text, and electric-blue accents. Start with a hero section summarizing the key findings and statistics. Use Bento-style cards for major trends, emerging signals, and independent explorations; each card should show its maturity level, paper count, and representative papers. Support tag filtering and expandable details. End with a method matrix and an author–institution network.\n\nWrite in clear, concise English while preserving original paper titles, model names, and necessary technical terms."
+    },
     {
       "id": "how-to-start-a-startup",
       "name": "How to Start a Startup",
