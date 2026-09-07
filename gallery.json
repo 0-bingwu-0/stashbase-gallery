@@ -11,7 +11,9 @@
       "repo": "https://github.com/0-bingwu-0/ECCV_26_oral",
       "clone": "git clone https://github.com/0-bingwu-0/ECCV_26_oral",
       "screenshots": [
-        "https://assets.stashbase.ai/wikis/eccv-2026-orals/screenshots/cover-51a694c5.jpeg"
+        "https://assets.stashbase.ai/wikis/eccv-2026-orals/screenshots/cover-51a694c5.jpeg",
+        "https://assets.stashbase.ai/wikis/eccv-2026-orals/screenshots/hero-909ae8bb.png",
+        "https://assets.stashbase.ai/wikis/eccv-2026-orals/screenshots/graph-fc2041d1.png"
       ],
       "files": [
         "README.md",
