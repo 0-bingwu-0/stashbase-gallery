@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-07",
+  "updated": "2026-09-09",
   "wikis": [
     {
       "id": "eccv-2026-orals",
@@ -70,6 +70,32 @@
         "transcripts/Lecture20-LaterStageAdvice.md"
       ],
       "wikiPrompt": "Build or update Wiki Pages from these lecture transcripts: one page per lecture with its key ideas, and a founder playbook that connects them."
+    },
+    {
+      "id": "how-to-geo",
+      "name": "How to GEO",
+      "category": "reference",
+      "description": "193 source cards on GEO and AI search, distilled into a Wiki and an actionable handbook for small product teams.",
+      "contents": "193 source cards · 6 topics · GEO Wiki · implementation handbook",
+      "repo": "https://github.com/0-bingwu-0/how-to-geo",
+      "clone": "git clone https://github.com/0-bingwu-0/how-to-geo",
+      "starterPrompts": [
+        "What should a small product team do first to improve visibility in AI search?",
+        "How should I configure JSON-LD, sitemaps, and IndexNow for my website?",
+        "Which GEO tactics have supporting evidence, and which should I treat as experiments?"
+      ],
+      "files": [
+        "wiki.md",
+        "handbook.md",
+        "sources/README.md",
+        "sources/01-strategy-and-guides.md",
+        "sources/02-research-and-evidence.md",
+        "sources/03-technical-foundations.md",
+        "sources/04-measurement-and-tools.md",
+        "sources/05-agentic-commerce.md",
+        "sources/06-industry-directory.md"
+      ],
+      "wikiPrompt": "Using the materials in sources/, create or update two Markdown files for independent developers and small product teams:\n\n- wiki.md: organize knowledge by key ideas, consolidate overlapping viewpoints, explain conditions, evidence and disagreements, and link to source cards.\n- handbook.md: turn the knowledge into an executable workflow covering website setup, content creation, publishing, measurement and maintenance. Include concrete steps, configuration examples, expected results and verification methods.\n\nThe source cards are summaries. Read linked originals when implementation details are missing, and verify technical instructions against current official documentation. Prioritize well-supported practices suitable for small teams and distinguish implementation success from improved citations or conversions.\n\nWrite concise English, use relative Markdown links between local files, and leave sources/ unchanged."
     }
   ]
 }
