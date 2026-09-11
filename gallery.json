@@ -100,6 +100,36 @@
         "https://assets.stashbase.ai/wikis/how-to-geo/screenshots/cover-1de6fbbd.jpg",
         "https://assets.stashbase.ai/wikis/how-to-geo/screenshots/handbook-7bab197d.png"
       ]
+    },
+    {
+      "id": "how-to-geo",
+      "name": "How to GEO",
+      "category": "reference",
+      "description": "193 source cards on GEO and AI search, distilled into a Wiki and an actionable handbook for small product teams.",
+      "contents": "193 source cards · 6 topics · GEO Wiki · implementation handbook",
+      "repo": "https://github.com/0-bingwu-0/how-to-geo",
+      "clone": "git clone https://github.com/0-bingwu-0/how-to-geo",
+      "starterPrompts": [
+        "What should a small product team do first to improve visibility in AI search?",
+        "How should I configure JSON-LD, sitemaps, and IndexNow for my website?",
+        "Which GEO tactics have supporting evidence, and which should I treat as experiments?"
+      ],
+      "files": [
+        "wiki.md",
+        "handbook.md",
+        "sources/README.md",
+        "sources/01-strategy-and-guides.md",
+        "sources/02-research-and-evidence.md",
+        "sources/03-technical-foundations.md",
+        "sources/04-measurement-and-tools.md",
+        "sources/05-agentic-commerce.md",
+        "sources/06-industry-directory.md"
+      ],
+      "wikiPrompt": "Using the materials in sources/ as a starting point, create two Markdown files for independent developers and small product teams:\n\n- wiki.md — a knowledge guide organized by key ideas, with a table of contents. Consolidate overlapping viewpoints, explain concepts, conditions, evidence, and disagreements, and link to the relevant source cards.\n- handbook.md — a practical, executable GEO manual covering website setup, content creation, publishing, measurement, and ongoing maintenance.\n\nThe source cards contain summaries, not complete implementation instructions. Follow their links and read the original articles whenever the Handbook needs details the cards do not contain. Use current official documentation to verify technical instructions, platform requirements, and configuration examples. Add relevant primary sources when the collection has gaps.\n\nThe Handbook must explain how to do the work, not just what to check. For each task, include the prerequisites, concrete steps, configuration or code examples where useful, expected results, and verification methods. Explain common failures and how to resolve them. Distinguish one-time setup from steps repeated on publication or update, and identify what can be automated.\n\nCover relevant technical details such as crawler access and CDN/firewall rules, robots.txt, canonical URLs and indexing directives, sitemaps and accurate lastmod dates, JSON-LD, and IndexNow notifications after publishing or updating content. Separate broadly applicable instructions from platform-specific examples.\n\nPrioritize well-supported practices suitable for small teams. Clearly mark conditional steps. Distinguish successful implementation from evidence of improved discovery, citations, or conversions; do not turn uncertain benefits into mandatory requirements. If an instruction cannot be verified, state what remains unresolved rather than inventing details.\n\nWrite concise English, but preserve the detail needed to execute each task. Keep explanations and evidence in wiki.md; make handbook.md usable independently, with links to the Wiki and original documentation for further detail.\n\nUse relative Markdown links between local files and leave sources/ unchanged. If wiki.md and handbook.md already exist, revise them while preserving useful material.",
+      "screenshots": [
+        "https://assets.stashbase.ai/wikis/how-to-geo/screenshots/cover-1de6fbbd.jpg",
+        "https://assets.stashbase.ai/wikis/how-to-geo/screenshots/handbook-7bab197d.png"
+      ]
     }
   ]
 }
