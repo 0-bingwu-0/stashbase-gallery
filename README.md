@@ -35,7 +35,8 @@ fields they do not recognize.
 | `name` | Display name |
 | `category` | One word: `course`, `research`, `reference`, … |
 | `description` | One sentence — source, then what's inside |
-| `contents` | Short inventory line shown on the card |
+| `about` | The introduction on the entry page, in the publisher's own words: why the wiki was made, what it holds, who it is for. Plain text, a blank line between paragraphs, up to 8,000 characters |
+| `contents` | Short inventory line |
 | `repo` / `clone` | Where the Wiki lives, and the exact command to fetch it |
 | `learnMore` | Optional deep-dive page |
 | `starterPrompts` | Questions to paste into the chat box as-is |

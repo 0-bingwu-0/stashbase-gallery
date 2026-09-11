@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-09",
+  "updated": "2026-09-12",
   "wikis": [
     {
       "id": "eccv-2026-orals",
       "name": "ECCV 2026 Orals",
       "category": "research",
       "description": "A full-paper review of 26 ECCV 2026 oral papers.",
+      "about": "The ECCV oral list is the shortest route to what computer vision is betting on this year, but 28 papers is more than an evening, and skimming abstracts is how you end up repeating a paper's own pitch. I wanted the version where every paper was actually read, and every claim traces back to a specific PDF.\n\nInside: WIKI.md, a per-paper index of the 26 orals with a public PDF, each with a one-sentence explanation, normalized tags, and only the code, models, and datasets the paper itself confirms. trends.html, a self-contained trend report with 8 major trends, 5 emerging signals, 4 independent explorations, a method matrix, and a collaboration map across authors and institutions. manifest.csv, the source list with arXiv IDs and file hashes. Two papers had no public PDF and are left out rather than summarized from their titles.\n\nFor AI engineers and technically curious readers who want to know where the field is heading without reading 500 MB of PDFs first. Ask it which methods are crossing between areas, which trends rest on a single paper, or who is collaborating with whom.",
       "contents": "26 paper summaries · 8 major trends · collaboration map · source manifest",
       "repo": "https://github.com/0-bingwu-0/ECCV_26_oral",
       "clone": "git clone https://github.com/0-bingwu-0/ECCV_26_oral",
@@ -28,6 +29,7 @@
       "name": "How to Start a Startup",
       "category": "course",
       "description": "Sam Altman's Stanford CS183B course with YC.",
+      "about": "I kept coming back to Sam Altman's CS183B lectures and kept losing the thread between them: the idea advice is in one lecture, the hiring advice in another, and the answer you actually need is usually a synthesis of three. So I put the whole course in one folder and built the synthesis on top of it.\n\nInside: full transcripts of all 20 lectures from the Stanford and Y Combinator course, one Markdown file per lecture, with guest lectures from Peter Thiel, Marc Andreessen, and founders and operators from Airbnb, Stripe, and Facebook. founder_playbook.html, a single-page notebook distilled from them: around 60 founder questions, each answered with the principles, a decision framework, a checklist, and the traps to avoid. STASHBASE.md carries the maintenance rules the Agent follows when the playbook needs updating.\n\nFor anyone starting a company, or deciding whether to. Ask it how to find an idea, how to tell whether you have product-market fit, or whether to worry about being copied, and it answers from the lectures rather than from the internet.",
       "contents": "20 lecture transcripts · distilled founder playbook · STASHBASE.md maintenance rules",
       "repo": "https://github.com/0-bingwu-0/stashbase-cs183b",
       "clone": "git clone https://github.com/0-bingwu-0/stashbase-cs183b",
@@ -76,36 +78,7 @@
       "name": "How to GEO",
       "category": "reference",
       "description": "193 source cards on GEO and AI search, distilled into a Wiki and an actionable handbook for small product teams.",
-      "contents": "193 source cards · 6 topics · GEO Wiki · implementation handbook",
-      "repo": "https://github.com/0-bingwu-0/how-to-geo",
-      "clone": "git clone https://github.com/0-bingwu-0/how-to-geo",
-      "starterPrompts": [
-        "What should a small product team do first to improve visibility in AI search?",
-        "How should I configure JSON-LD, sitemaps, and IndexNow for my website?",
-        "Which GEO tactics have supporting evidence, and which should I treat as experiments?"
-      ],
-      "files": [
-        "wiki.md",
-        "handbook.md",
-        "sources/README.md",
-        "sources/01-strategy-and-guides.md",
-        "sources/02-research-and-evidence.md",
-        "sources/03-technical-foundations.md",
-        "sources/04-measurement-and-tools.md",
-        "sources/05-agentic-commerce.md",
-        "sources/06-industry-directory.md"
-      ],
-      "wikiPrompt": "Using the materials in sources/ as a starting point, create two Markdown files for independent developers and small product teams:\n\n- wiki.md — a knowledge guide organized by key ideas, with a table of contents. Consolidate overlapping viewpoints, explain concepts, conditions, evidence, and disagreements, and link to the relevant source cards.\n- handbook.md — a practical, executable GEO manual covering website setup, content creation, publishing, measurement, and ongoing maintenance.\n\nThe source cards contain summaries, not complete implementation instructions. Follow their links and read the original articles whenever the Handbook needs details the cards do not contain. Use current official documentation to verify technical instructions, platform requirements, and configuration examples. Add relevant primary sources when the collection has gaps.\n\nThe Handbook must explain how to do the work, not just what to check. For each task, include the prerequisites, concrete steps, configuration or code examples where useful, expected results, and verification methods. Explain common failures and how to resolve them. Distinguish one-time setup from steps repeated on publication or update, and identify what can be automated.\n\nCover relevant technical details such as crawler access and CDN/firewall rules, robots.txt, canonical URLs and indexing directives, sitemaps and accurate lastmod dates, JSON-LD, and IndexNow notifications after publishing or updating content. Separate broadly applicable instructions from platform-specific examples.\n\nPrioritize well-supported practices suitable for small teams. Clearly mark conditional steps. Distinguish successful implementation from evidence of improved discovery, citations, or conversions; do not turn uncertain benefits into mandatory requirements. If an instruction cannot be verified, state what remains unresolved rather than inventing details.\n\nWrite concise English, but preserve the detail needed to execute each task. Keep explanations and evidence in wiki.md; make handbook.md usable independently, with links to the Wiki and original documentation for further detail.\n\nUse relative Markdown links between local files and leave sources/ unchanged. If wiki.md and handbook.md already exist, revise them while preserving useful material.",
-      "screenshots": [
-        "https://assets.stashbase.ai/wikis/how-to-geo/screenshots/cover-1de6fbbd.jpg",
-        "https://assets.stashbase.ai/wikis/how-to-geo/screenshots/handbook-7bab197d.png"
-      ]
-    },
-    {
-      "id": "how-to-geo",
-      "name": "How to GEO",
-      "category": "reference",
-      "description": "193 source cards on GEO and AI search, distilled into a Wiki and an actionable handbook for small product teams.",
+      "about": "Every week there is a new post on getting your product cited by ChatGPT, Perplexity, and Google's AI answers, and most of them contradict each other. I collected 193 of them so I could stop reading them one at a time, and had the collection sorted into what is actually supported, what is merely popular, and what is only worth an experiment.\n\nInside: sources/, the 193 source cards in six topics, from strategy guides and research to technical foundations, measurement, agentic commerce, and an industry directory. wiki.md, the knowledge guide that consolidates them by key idea, with the evidence and the disagreements kept visible and every practice labeled Foundation, Practice, Conditional, or Experimental. handbook.md, the executable manual: crawler access and robots.txt, canonical URLs, sitemaps, JSON-LD, IndexNow, content, publishing, and measurement, each with the steps, an example, and how to verify it. Checked against the sources on September 9, 2026.\n\nFor independent developers and small product teams who want to be visible in AI search without hiring an agency. Ask it what to do first, how to set up structured data for your site, or which tactics have evidence behind them.",
       "contents": "193 source cards · 6 topics · GEO Wiki · implementation handbook",
       "repo": "https://github.com/0-bingwu-0/how-to-geo",
       "clone": "git clone https://github.com/0-bingwu-0/how-to-geo",
