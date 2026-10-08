@@ -1,8 +1,7 @@
 # StashBase Gallery
 
 The curated gallery behind **Explore the Gallery** in [StashBase](https://stashbase.ai):
-ready-made Wikis and project templates you can download and use right away, starter prompts included,
-and ready-made personas for the Agent.
+ready-made Wikis and project templates you can download and use right away, and ready-made personas for the Agent.
 This repository **is** the backend — a static index consumed by the app and the
 website, updated by pull request, no server anywhere.
 
@@ -10,11 +9,10 @@ website, updated by pull request, no server anywhere.
 
 Everything lives in [`gallery.json`](./gallery.json). Each entry points at a
 public git repository where the whole project lives in the files — clone it,
-disconnect, and it still works. `starterPrompts` are questions worth asking the
-moment the folder is open in StashBase.
+disconnect, and it still works. Each entry shows its cover and introduction before a reader opens or copies it.
 
-Consumers fetch the index at runtime and fall back to a bundled snapshot when
-offline:
+The app fetches the index at runtime. The website reads it at build time, so
+website changes need a rebuild and deployment. Both keep a bundled fallback:
 
 ```
 https://assets.stashbase.ai/gallery.json
@@ -27,22 +25,17 @@ an edit is live within minutes of merging.)
 
 ## Schema
 
-`schemaVersion` is bumped only on breaking changes; consumers must ignore
-fields they do not recognize. Version 2 uses a single `screenshot` string instead
-of the `screenshots` array. Entries appear in the order listed in `wikis`.
+Entries appear in the order listed in `wikis`. Each project has one cover and an introduction. Consumers validate the fields they use and ignore unknown fields.
 
 | Field | Meaning |
 | --- | --- |
 | `id` | Stable slug, never reused |
 | `name` | Display name |
-| `category` | One word: `course`, `research`, `reference`, … |
-| `description` | One sentence — source, then what's inside |
-| `about` | The introduction on the entry page, in the publisher's own words: why the wiki was made, what it holds, who it is for. Plain text, a blank line between paragraphs, up to 8,000 characters |
-| `contents` | Short inventory line |
-| `repo` / `clone` | Where the Wiki lives, and the exact command to fetch it |
-| `learnMore` | Optional deep-dive page |
-| `starterPrompts` | Questions to paste into the chat box as-is |
-| `screenshot` | One cover image path or published URL per project |
+| `category` | One word: `template`, `course`, `research`, `reference`, … |
+| `description` | One sentence under the project name, led by the reader’s goal or benefit rather than a feature list |
+| `about` | Purpose, intended audience, and what readers can do. Plain text with a blank line between paragraphs; keep setup requirements, costs, and limitations in the project README |
+| `repo` | Public GitHub repository to copy |
+| `screenshot` | One cover image path or published URL |
 
 ### Personas
 
