@@ -1,14 +1,15 @@
 # StashBase Gallery
 
 The curated gallery behind **Explore the Gallery** in [StashBase](https://stashbase.ai):
-ready-made Wikis you can download and use right away, starter prompts included.
+ready-made Wikis and project templates you can download and use right away, starter prompts included,
+and ready-made personas for the Agent.
 This repository **is** the backend — a static index consumed by the app and the
 website, updated by pull request, no server anywhere.
 
 ## How it works
 
 Everything lives in [`gallery.json`](./gallery.json). Each entry points at a
-public git repository where the whole Wiki lives in the files — clone it,
+public git repository where the whole project lives in the files — clone it,
 disconnect, and it still works. `starterPrompts` are questions worth asking the
 moment the folder is open in StashBase.
 
@@ -27,7 +28,8 @@ an edit is live within minutes of merging.)
 ## Schema
 
 `schemaVersion` is bumped only on breaking changes; consumers must ignore
-fields they do not recognize.
+fields they do not recognize. Version 2 uses a single `screenshot` string instead
+of the `screenshots` array. Entries appear in the order listed in `wikis`.
 
 | Field | Meaning |
 | --- | --- |
@@ -40,6 +42,24 @@ fields they do not recognize.
 | `repo` / `clone` | Where the Wiki lives, and the exact command to fetch it |
 | `learnMore` | Optional deep-dive page |
 | `starterPrompts` | Questions to paste into the chat box as-is |
+| `screenshot` | One cover image path or published URL per project |
+
+### Personas
+
+`personas` lists ready-made personas a reader can add to their own library in
+StashBase. Adding takes a copy, so a later change here never reaches a persona
+someone already added. Every sample answers the same request, so readers can
+compare voices side by side.
+
+| Field | Meaning |
+| --- | --- |
+| `id` | Stable lowercase slug (`a-z`, `0-9`, `-`), never reused |
+| `name` | Display name |
+| `category` | One word: `news`, `fiction`, `docs`, … |
+| `description` | One line under the name |
+| `icon` | Optional icon name from the app's set (`feather`, `newspaper`, …); others read as the default |
+| `prompt` | The exact text the Agent receives, up to 32,000 characters |
+| `sample` | Optional `{ request, reply }`: a real exchange under this persona |
 
 ## Contributing
 

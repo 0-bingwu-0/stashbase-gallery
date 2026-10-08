@@ -64,15 +64,13 @@ function resolveScreenshot(value) {
 const gallery = JSON.parse(fs.readFileSync(galleryPath, 'utf8'));
 const uploads = new Map();
 for (const wiki of gallery.wikis ?? []) {
-  if (!Array.isArray(wiki.screenshots)) continue;
-  wiki.screenshots = wiki.screenshots.map((value) => {
-    const { url, localPath } = resolveScreenshot(value);
-    if (localPath) {
-      const key = url.slice(ASSET_BASE_URL.length + 1);
-      uploads.set(key, localPath);
-    }
-    return url;
-  });
+  if (!wiki.screenshot) continue;
+  const { url, localPath } = resolveScreenshot(wiki.screenshot);
+  if (localPath) {
+    const key = url.slice(ASSET_BASE_URL.length + 1);
+    uploads.set(key, localPath);
+  }
+  wiki.screenshot = url;
 }
 
 const published = `${JSON.stringify(gallery, null, 2)}\n`;
