@@ -11,13 +11,22 @@
       "screenshot": "https://assets.stashbase.ai/wikis/resume-builder/screenshots/cover-b1b05344.jpg"
     },
     {
+      "id": "linkedin-ghostwriter",
+      "name": "LinkedIn Ghostwriter",
+      "category": "personal brand",
+      "description": "Share what you build and learn on LinkedIn, in your own voice, then bring it to X.",
+      "about": "Post on LinkedIn consistently with a ghostwriter that learns your background and writing style. For students, builders, and professionals who want to share what they're working on and learning.\n\nStart from something you've been building or learning, or from today's AI news on the X accounts you follow. The Agent writes the LinkedIn post and asks for the one detail only you know when it matters. Once you approve, it turns the post into an X Post or X Article, whichever fits.",
+      "repo": "https://github.com/0-bingwu-0/linkedin-ghostwriter",
+      "screenshot": "https://assets.stashbase.ai/wikis/linkedin-ghostwriter/screenshots/cover-10a04a32.jpg"
+    },
+    {
       "id": "x-content-starter",
       "name": "X Content Starter",
       "category": "personal brand",
       "description": "Build your personal brand on X by sharing your ideas consistently, in your own voice.",
       "about": "Build a consistent posting habit on X with a content partner that learns your background and writing style. For builders, founders, and professionals who want to share their views and develop a personal brand.\n\nFind topics from the accounts you follow, connect them to your own point of view, and turn an approved outline into a Post or Article. Keep your drafts and past posts together so each new piece can build on what you have already shared.",
       "repo": "https://github.com/0-bingwu-0/x-content-starter",
-      "screenshot": "https://assets.stashbase.ai/wikis/x-content-starter/screenshots/cover-brand-2c52afff.png"
+      "screenshot": "https://assets.stashbase.ai/wikis/x-content-starter/screenshots/cover-ac1a3415.jpg"
     },
     {
       "id": "paper-tracker-for-industry",
@@ -26,7 +35,7 @@
       "description": "Keep up with the AI papers that matter for your work, without reading them all.",
       "about": "Follow new AI research and see what it changes for your work. For analysts, investors, and other professionals who need to keep up with AI but don't do research for a living.\n\nTell the Agent what you do and which views you're tracking. It pulls the papers the AI community is paying attention to from Hugging Face Daily Papers, picks out the ones that support or challenge your views, and explains why in a short digest. Ask about a trend, a view, or a paper, and get an answer from your paper library, with sources.",
       "repo": "https://github.com/0-bingwu-0/paper-tracker-for-industry",
-      "screenshot": "https://assets.stashbase.ai/wikis/paper-tracker-for-industry/screenshots/cover-332290f7.jpg"
+      "screenshot": "https://assets.stashbase.ai/wikis/paper-tracker-for-industry/screenshots/cover-041f6835.jpg"
     },
     {
       "id": "eccv-2026-orals",

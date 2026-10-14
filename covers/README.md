@@ -15,3 +15,6 @@ Render at 1600 × 900 with headless Chrome, then save it as `wikis/<id>/screensh
 | Project | Color |
 | --- | --- |
 | resume-builder | mint |
+| linkedin-ghostwriter | sky |
+| x-content-starter | pink |
+| paper-tracker-for-industry | lavender |

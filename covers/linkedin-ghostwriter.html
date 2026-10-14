@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="cover.css">
+<style>
+  .sheet { left: 930px; top: 250px; width: 600px; height: 760px; transform: rotate(-3deg); padding: 40px 46px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #1a1a1a; }
+  .sheet .author { display: flex; gap: 16px; align-items: center; }
+  .sheet .avatar { width: 72px; height: 72px; border-radius: 50%; background: var(--deep); color: #fff; display: grid; place-items: center; font-size: 26px; font-weight: 600; flex: none; }
+  .sheet .name { font-size: 22px; font-weight: 600; }
+  .sheet .headline { font-size: 16px; color: #666; margin-top: 3px; }
+  .sheet .body { margin-top: 26px; font-size: 20px; line-height: 1.5; color: #222; }
+  .sheet .body p + p { margin-top: 16px; }
+  .sheet .stats { margin-top: 26px; font-size: 15px; color: #777; }
+  .sheet .more { color: #777; }
+  .sheet mark { background: color-mix(in srgb, var(--deep) 30%, transparent); padding: 1px 3px; border-radius: 3px; color: inherit; }
+  .sheet .actions { display: flex; justify-content: space-between; margin-top: 12px; padding-top: 16px; border-top: 1px solid #e3e3e3; font-size: 17px; font-weight: 600; color: #666; }
+</style>
+</head>
+<body class="sky">
+  <div class="grain"></div>
+  <svg class="arcs" viewBox="0 0 1600 900"><path d="M 520 900 C 640 560, 980 330, 1600 300"/><path d="M -40 520 C 260 470, 520 520, 760 900"/></svg>
+
+  <div class="title">
+    <svg class="mark" viewBox="58 36 412 412" fill="none">
+      <path d="M104 210 L104 321.1 A24 24 0 0 0 116.1 342 L216.9 399.7" stroke="#1c1c1a" stroke-opacity="0.45" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M338 111 L267.9 70.84 A24 24 0 0 0 244.1 70.84 L128.3 137.2 A24 24 0 0 0 128.3 178.8 L244.1 245.2 A24 24 0 0 0 267.9 245.2 L384.1 178.6 A24 24 0 0 1 420 199.4 L420 328.1 A24 24 0 0 1 407.9 348.9 L291.9 415.4 A24 24 0 0 1 256 394.6 L256 344" stroke="#1c1c1a" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h1>LinkedIn Ghostwriter<em>From LinkedIn to X</em></h1>
+  </div>
+
+  <div class="sheet">
+    <div class="author">
+      <div class="avatar">AR</div>
+      <div>
+        <div class="name">Arjun Rao</div>
+        <div class="headline">CS student · Learning AI by building with it</div>
+      </div>
+    </div>
+    <div class="body">
+      <p>I spent three weekends building a study helper for my operating systems class. You ask it a question, and it answers from the lecture slides.</p>
+      <p><mark>The first version was confidently wrong about half the time.</mark></p>
+      <p>Three things broke, and none of them were in the tutorial I started with:</p>
+      <p>1. Chunks were too small. A slide is often a title, ten words, and a diagram. <span class="more">…more</span></p>
+    </div>
+    <div class="stats">128 reactions · 23 comments</div>
+    <div class="actions"><span>Like</span><span>Comment</span><span>Repost</span><span>Send</span></div>
+  </div>
+
+  <div class="bubble ask" style="left: 716px; top: 452px;"><small>You</small>Approved.</div>
+  <div class="bubble reply" style="left: 470px; top: 596px; max-width: 440px;"><small>X Article</small>What Broke in My First RAG Project, and What Fixed It</div>
+
+  <div class="label">StashBase Gallery</div>
+</body>
+</html>
