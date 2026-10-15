@@ -3,9 +3,24 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="cover.css">
+<style>
+  .thing { left: 350px; top: 150px; width: 900px; padding: 50px 56px 42px; background: #15171a; color: #f2f2f0; }
+  .author { display: flex; gap: 22px; align-items: center; }
+  .avatar { width: 88px; height: 88px; font-size: 32px; background: #e4c8ba; color: #15171a; }
+  .author b { display: block; font-size: 30px; }
+  .author span { display: block; font-size: 23px; color: #8b8f94; margin-top: 4px; }
+  .text { font-size: 54px; line-height: 1.22; margin-top: 34px; letter-spacing: -0.5px; }
+  .text em { font-style: normal; color: #e9a58c; }
+  .stats { display: flex; gap: 48px; margin-top: 40px; padding-top: 24px; border-top: 1.5px solid #2c2f33; font-size: 23px; color: #8b8f94; }
+  .stats b { color: #f2f2f0; font-weight: 600; }
+</style>
 </head>
 <body class="clay">
   <div class="grain"></div>
-  <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><path class="body" d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path class="body" d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"/><path d="M8 6v8"/></svg>
+  <div class="thing">
+    <div class="author"><div class="avatar">ML</div><div><b>Maya Lin</b><span>@mayabuilds</span></div></div>
+    <p class="text">ChatGPT just got better memory. <em>It still can’t read your notes.</em></p>
+    <div class="stats"><span><b>4.2K</b> views</span><span><b>32</b> reposts</span><span><b>214</b> likes</span></div>
+  </div>
 </body>
 </html>

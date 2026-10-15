@@ -3,9 +3,27 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="cover.css">
+<style>
+  .thing { left: 330px; top: 90px; width: 940px; padding: 46px 52px 34px; }
+  .author { display: flex; gap: 22px; align-items: center; }
+  .avatar { width: 92px; height: 92px; font-size: 34px; }
+  .author b { display: block; font-size: 30px; }
+  .author span { display: block; font-size: 22px; color: #77776f; margin-top: 4px; }
+  .text { font-size: 36px; line-height: 1.35; margin-top: 30px; }
+  .picture { margin-top: 30px; height: 250px; border-radius: 14px; background: linear-gradient(135deg, color-mix(in srgb, var(--deep) 80%, #fff), var(--deep)); position: relative; overflow: hidden; }
+  .picture i { position: absolute; bottom: 0; width: 64px; border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.85); }
+  .bar { display: flex; justify-content: space-between; margin-top: 24px; padding-top: 20px; border-top: 1.5px solid #e6e6e2; font-size: 22px; font-weight: 600; color: #77776f; }
+</style>
 </head>
 <body class="blue">
   <div class="grain"></div>
-  <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><path class="body" d="M14.086 18.412A2 2 0 0112.67 19H5v-7.672a2 2 0 01.586-1.414L11.75 3.75a6 6 0 118.49 8.49z"/><path d="M16 8 2 22"/><path d="M17.488 15H9"/></svg>
+  <div class="thing">
+    <div class="author"><div class="avatar">AR</div><div><b>Arjun Rao</b><span>CS student · Learning AI by building with it</span></div></div>
+    <p class="text">I spent three weekends building a study helper. The first version was confidently wrong half the time.</p>
+    <div class="picture">
+      <i style="left: 120px; height: 70px"></i><i style="left: 220px; height: 120px"></i><i style="left: 320px; height: 95px"></i><i style="left: 420px; height: 165px"></i><i style="left: 520px; height: 205px"></i><i style="left: 620px; height: 190px"></i>
+    </div>
+    <div class="bar"><span>128 reactions</span><span>23 comments</span><span>Repost</span></div>
+  </div>
 </body>
 </html>

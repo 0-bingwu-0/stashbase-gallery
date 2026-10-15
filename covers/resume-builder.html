@@ -3,9 +3,30 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="cover.css">
+<style>
+  .thing { left: 400px; top: 110px; width: 800px; height: 900px; border-radius: 14px; padding: 76px 84px; }
+  h1 { font-family: "Newsreader", serif; font-weight: 400; font-size: 96px; letter-spacing: -2px; text-align: center; line-height: 1; }
+  .contact { text-align: center; font-size: 22px; color: #77776f; margin-top: 18px; }
+  h2 { font-size: 19px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; border-bottom: 2.5px solid #1c1c1a; padding-bottom: 8px; margin: 46px 0 18px; }
+  .row { display: flex; justify-content: space-between; font-size: 25px; line-height: 1.5; }
+  .row span { color: #77776f; }
+  ul { margin: 10px 0 0 28px; font-size: 23px; line-height: 1.6; color: #33332f; }
+</style>
 </head>
 <body class="green">
   <div class="grain"></div>
-  <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><path class="body" d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M16 22a4 4 0 0 0-8 0"/><circle cx="12" cy="15" r="3"/></svg>
+  <div class="thing">
+    <h1>Riya Sharma</h1>
+    <p class="contact">riya.sharma@example.com · Pune, India</p>
+    <h2>Experience</h2>
+    <div class="row"><b>Kirana Ledger, Backend Intern</b><span>2026</span></div>
+    <ul>
+      <li><mark>Cut support requests from 40 a week to under 10</mark> with a report export API.</li>
+      <li>Brought the transactions page from 3s to under 1s.</li>
+      <li>Raised payments test coverage from 35% to 70%.</li>
+    </ul>
+    <h2>Projects</h2>
+    <div class="row"><b>Campus Lost &amp; Found</b><span>2026</span></div>
+  </div>
 </body>
 </html>
