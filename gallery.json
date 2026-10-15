@@ -8,7 +8,7 @@
       "description": "Build a resume that shows what you actually did, and tailor it to every job you apply for.",
       "about": "Build your resume with an Agent that interviews you first. For students and early-career job seekers, whether it's your first resume or your old one undersells you.\n\nStart with your current resume or LinkedIn profile. The Agent asks about what's missing, like what you did yourself and what came of it, then writes a one-page resume from your answers. Paste a job description and it writes a version for that job, picking from everything you've told it, plus a cover letter if you need one.",
       "repo": "https://github.com/0-bingwu-0/resume-builder",
-      "screenshot": "https://assets.stashbase.ai/wikis/resume-builder/screenshots/cover-b1b05344.jpg"
+      "screenshot": "https://assets.stashbase.ai/wikis/resume-builder/screenshots/cover-2f1d6935.jpg"
     },
     {
       "id": "linkedin-ghostwriter",
@@ -17,7 +17,7 @@
       "description": "Share what you build and learn on LinkedIn, in your own voice, then bring it to X.",
       "about": "Post on LinkedIn consistently with a ghostwriter that learns your background and writing style. For students, builders, and professionals who want to share what they're working on and learning.\n\nStart from something you've been building or learning, or from today's AI news on the X accounts you follow. The Agent writes the LinkedIn post and asks for the one detail only you know when it matters. Once you approve, it turns the post into an X Post or X Article, whichever fits.",
       "repo": "https://github.com/0-bingwu-0/linkedin-ghostwriter",
-      "screenshot": "https://assets.stashbase.ai/wikis/linkedin-ghostwriter/screenshots/cover-10a04a32.jpg"
+      "screenshot": "https://assets.stashbase.ai/wikis/linkedin-ghostwriter/screenshots/cover-74e28b9a.jpg"
     },
     {
       "id": "x-content-starter",
@@ -26,7 +26,7 @@
       "description": "Build your personal brand on X by sharing your ideas consistently, in your own voice.",
       "about": "Build a consistent posting habit on X with a content partner that learns your background and writing style. For builders, founders, and professionals who want to share their views and develop a personal brand.\n\nFind topics from the accounts you follow, connect them to your own point of view, and turn an approved outline into a Post or Article. Keep your drafts and past posts together so each new piece can build on what you have already shared.",
       "repo": "https://github.com/0-bingwu-0/x-content-starter",
-      "screenshot": "https://assets.stashbase.ai/wikis/x-content-starter/screenshots/cover-ac1a3415.jpg"
+      "screenshot": "https://assets.stashbase.ai/wikis/x-content-starter/screenshots/cover-c5afa7e6.jpg"
     },
     {
       "id": "paper-tracker-for-industry",
@@ -35,34 +35,7 @@
       "description": "Keep up with the AI papers that matter for your work, without reading them all.",
       "about": "Follow new AI research and see what it changes for your work. For analysts, investors, and other professionals who need to keep up with AI but don't do research for a living.\n\nTell the Agent what you do and which views you're tracking. It pulls the papers the AI community is paying attention to from Hugging Face Daily Papers, picks out the ones that support or challenge your views, and explains why in a short digest. Ask about a trend, a view, or a paper, and get an answer from your paper library, with sources.",
       "repo": "https://github.com/0-bingwu-0/paper-tracker-for-industry",
-      "screenshot": "https://assets.stashbase.ai/wikis/paper-tracker-for-industry/screenshots/cover-041f6835.jpg"
-    },
-    {
-      "id": "eccv-2026-orals",
-      "name": "ECCV 2026 Orals",
-      "category": "research",
-      "description": "A full-paper review of 26 ECCV 2026 oral papers.",
-      "about": "Explore the ideas and research directions across 26 ECCV 2026 oral papers. For AI engineers, researchers, and technically curious readers who want to understand where computer vision is heading.\n\nBrowse paper summaries, compare methods across research areas, and explore major trends and emerging signals. Use the collaboration map to discover connections between authors and institutions, and ask the Agent to explain the papers and how their ideas relate.",
-      "repo": "https://github.com/0-bingwu-0/ECCV_26_oral",
-      "screenshot": "https://assets.stashbase.ai/wikis/eccv-2026-orals/screenshots/cover-51a694c5.jpeg"
-    },
-    {
-      "id": "how-to-start-a-startup",
-      "name": "How to Start a Startup",
-      "category": "course",
-      "description": "Sam Altman's Stanford CS183B course with YC.",
-      "about": "Turn Sam Altman's Stanford CS183B course with Y Combinator into a practical reference for building a company. For first-time founders, early-stage teams, and anyone considering a startup.\n\nExplore all 20 lecture transcripts and a founder playbook organized around common questions. Ask about finding an idea, reaching product-market fit, hiring, growth, or competition, and connect advice from different lectures to the decision you are working through.",
-      "repo": "https://github.com/0-bingwu-0/stashbase-cs183b",
-      "screenshot": "https://assets.stashbase.ai/wikis/how-to-start-a-startup/screenshots/playbook-14d3aa88.png"
-    },
-    {
-      "id": "how-to-geo",
-      "name": "How to GEO",
-      "category": "reference",
-      "description": "193 source cards on GEO and AI search, distilled into a Wiki and an actionable handbook for small product teams.",
-      "about": "Understand how AI search discovers and cites products, and turn that knowledge into a plan for your website. For independent developers and small product teams working on visibility in ChatGPT, Perplexity, and other AI search tools.\n\nExplore a Wiki and implementation handbook built from 193 source cards. Ask what to work on first, compare approaches, and work through crawler access, structured data, publishing, and measurement with concrete steps and examples.",
-      "repo": "https://github.com/0-bingwu-0/how-to-geo",
-      "screenshot": "https://assets.stashbase.ai/wikis/how-to-geo/screenshots/cover-1de6fbbd.jpg"
+      "screenshot": "https://assets.stashbase.ai/wikis/paper-tracker-for-industry/screenshots/cover-bec4b9b4.jpg"
     }
   ],
   "personas": [
