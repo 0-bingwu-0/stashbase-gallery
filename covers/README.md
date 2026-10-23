@@ -19,3 +19,4 @@ sips -s format jpeg -s formatOptions 90 cover.png --out wikis/<id>/screenshots/c
 | linkedin-ghostwriter | blue, LinkedIn post |
 | x-content-starter | clay, post on X |
 | paper-tracker-for-industry | violet, weekly digest |
+| llm-wiki-for-papers | green, map of papers and how they connect |
