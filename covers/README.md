@@ -20,3 +20,4 @@ sips -s format jpeg -s formatOptions 90 cover.png --out wikis/<id>/screenshots/c
 | x-content-starter | clay, post on X |
 | paper-tracker-for-industry | violet, weekly digest |
 | llm-wiki-for-papers | green, map of papers and how they connect |
+| poc-deck-builder | blue, results slide with each success criterion against its target |

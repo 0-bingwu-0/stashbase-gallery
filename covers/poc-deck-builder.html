@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="cover.css">
+<style>
+  .thing { width: 1080px; border-radius: 12px; padding: 50px 60px; }
+  .bar { width: 64px; height: 7px; background: var(--deep); }
+  h1 { font-size: 68px; font-weight: 700; letter-spacing: -1.5px; line-height: 1.08; margin-top: 18px; }
+  .table { margin-top: 40px; font-size: 22px; }
+  .row { display: grid; grid-template-columns: 2.75fr 1fr 1.15fr 0.95fr; border-bottom: 1.5px solid #e2e2dc; color: #33332f; }
+  .row span { padding: 15px 16px; }
+  .row.head { background: var(--deep); border: 0; color: #fff; font-weight: 700; }
+  .row.head span { padding: 13px 16px; }
+  .row:not(.head) span:nth-child(3) { font-weight: 600; color: #1c1c1a; }
+  .met, .missed { font-weight: 700; }
+  .met { color: #2f7a46; }
+  .missed { color: #b4432f; }
+  .source { font-size: 17px; color: #8a8a82; margin-top: 26px; }
+</style>
+</head>
+<body class="blue">
+  <div class="grain"></div>
+  <div class="thing">
+    <div class="bar"></div>
+    <h1>4 of 5 success criteria met.</h1>
+    <div class="table">
+      <div class="row head"><span>Criterion</span><span>Target</span><span>Result</span><span>Status</span></div>
+      <div class="row"><span>Routed to the right team</span><span>≥ 90%</span><span>92.5%</span><span class="met">Met</span></div>
+      <div class="row"><span>Policy number read correctly</span><span>≥ 95%</span><span>97.8%</span><span class="met">Met</span></div>
+      <div class="row"><span>Claimed amount read correctly</span><span>≥ 95%</span><span>88.2%</span><span class="missed">Not met</span></div>
+      <div class="row"><span>Handling time per email</span><span>&lt; 1 min</span><span>41 s</span><span class="met">Met</span></div>
+      <div class="row"><span>Customer data stays in tenant</span><span>Required</span><span>Signed off</span><span class="met">Met</span></div>
+    </div>
+    <p class="source">Source: POC test on 600 anonymized claim emails. Time study with 3 handlers, 150 emails.</p>
+  </div>
+</body>
+</html>

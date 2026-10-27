@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-27",
   "wikis": [
     {
       "id": "resume-builder",
@@ -45,6 +45,15 @@
       "about": "Turn the papers in your research area into a wiki, following Andrej Karpathy's LLM Wiki idea. For grad students and researchers who read a lot of papers in one area and want to see how they fit together.\n\nAdd papers as PDFs or arXiv links. The Agent writes a page for each paper and keeps topic pages on how they relate: who builds on whom, which results can be compared, where they disagree, and what's still open. Ask a question and the answer comes from the wiki, with sources. Good answers go back into the wiki, so it gets sharper the more you use it.",
       "repo": "https://github.com/0-bingwu-0/llm-wiki-for-papers",
       "screenshot": "https://assets.stashbase.ai/wikis/llm-wiki-for-papers/screenshots/cover-34718704.jpg"
+    },
+    {
+      "id": "poc-deck-builder",
+      "name": "POC Deck Builder",
+      "category": "consulting",
+      "description": "Turn a finished POC into a client deck that leads with the answer and ends with a clear ask.",
+      "about": "Turn the work from a proof of concept (POC) into the readout deck you present to the client. For consultants, solutions engineers, and presales teams who run POCs and want every readout to show what was proven, what wasn't, and what comes next.\n\nDrop in your kickoff notes, test results, and screenshots. The Agent sorts them into a brief, proposes a storyline with one headline per slide, then writes the slides with speaker notes. You get a PDF, and an editable PowerPoint when you need one. It can also review a deck you or a junior wrote the way the client will, and prep you for the questions each person in the room is likely to ask.",
+      "repo": "https://github.com/0-bingwu-0/poc-deck-builder",
+      "screenshot": "https://assets.stashbase.ai/wikis/poc-deck-builder/screenshots/cover-bd323185.jpg"
     }
   ],
   "personas": [
