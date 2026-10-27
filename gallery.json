@@ -54,6 +54,15 @@
       "about": "Turn the work from a proof of concept (POC) into the readout deck you present to the client. For consultants, solutions engineers, and presales teams who run POCs and want every readout to show what was proven, what wasn't, and what comes next.\n\nDrop in your kickoff notes, test results, and screenshots. The Agent sorts them into a brief, proposes a storyline with one headline per slide, then writes the slides with speaker notes. You get a PDF, and an editable PowerPoint when you need one. It can also review a deck you or a junior wrote the way the client will, and prep you for the questions each person in the room is likely to ask.",
       "repo": "https://github.com/0-bingwu-0/poc-deck-builder",
       "screenshot": "https://assets.stashbase.ai/wikis/poc-deck-builder/screenshots/cover-bd323185.jpg"
+    },
+    {
+      "id": "software-architect",
+      "name": "Software Architect",
+      "category": "engineering",
+      "description": "Talk through your software design and get an architecture a coding agent can build from, kept current as you change your mind.",
+      "about": "Design the software you're about to build with an Agent that works as your software architect. For developers and tech leads who plan with AI first, then hand the build to Claude Code or Codex.\n\nTell it what the system does and who uses it. The Agent writes the architecture: modules, interfaces as code, key flows, and the decisions behind them. It applies SOLID where the code is likely to change, and tells you when something is over-engineered. As you talk, it updates the document each time you decide something, and saves a version before any change that reshapes the design, with what changed and why. Ask what changed since an earlier version, or go back to one.",
+      "repo": "https://github.com/0-bingwu-0/software-architect",
+      "screenshot": "https://assets.stashbase.ai/wikis/software-architect/screenshots/cover-2e8b2c64.jpg"
     }
   ],
   "personas": [

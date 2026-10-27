@@ -21,3 +21,4 @@ sips -s format jpeg -s formatOptions 90 cover.png --out wikis/<id>/screenshots/c
 | paper-tracker-for-industry | violet, weekly digest |
 | llm-wiki-for-papers | green, map of papers and how they connect |
 | poc-deck-builder | blue, results slide with each success criterion against its target |
+| software-architect | clay, architecture doc with its earlier versions stacked behind |

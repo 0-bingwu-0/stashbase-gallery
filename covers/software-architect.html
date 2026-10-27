@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="cover.css">
+<style>
+  /* Earlier versions stack behind the current one, each peeking out as a tab. */
+  .page { position: absolute; left: 50%; height: 760px; transform: translateX(-50%) scale(1.2); transform-origin: top center;
+    border-radius: 18px; padding: 7px 28px; font-size: 15px; font-weight: 600; color: #8a7a70;
+    box-shadow: 0 20px 50px rgba(30, 30, 24, 0.12); }
+  .page.v1 { top: 30px; width: 820px; background: #f1e6df; }
+  .page.v2 { top: 62px; width: 890px; background: #f8f1ec; }
+  .page b { color: var(--deep); margin-right: 8px; }
+  .thing { width: 960px; border-radius: 16px; padding: 46px 60px; }
+  .path { font-family: Menlo, monospace; font-size: 16px; color: #9a9a92; }
+  .title { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; }
+  h1 { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 66px; letter-spacing: -1.5px; line-height: 1.05; }
+  .version { background: var(--deep); color: #fff; font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 26px; padding: 8px 18px; border-radius: 10px; }
+  h2 { font-size: 16px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #77776f; margin: 34px 0 10px; }
+  .module { display: grid; grid-template-columns: 210px 1fr; gap: 20px; padding: 12px 0; border-bottom: 1.5px solid #ecebe6; font-size: 21px; line-height: 1.4; color: #44443f; }
+  .module b { color: #1c1c1a; }
+  pre { margin-top: 6px; background: #2c2622; color: #ece4dc; border-radius: 12px; padding: 20px 26px; font-family: Menlo, monospace; font-size: 18px; line-height: 1.6; }
+  .k { color: #e7a07f; }
+  .t { color: #b9d3a8; }
+</style>
+</head>
+<body class="clay">
+  <div class="grain"></div>
+  <div class="page v1"><b>v1</b>First design</div>
+  <div class="page v2"><b>v2</b>Split reminders out of Booking</div>
+  <div class="thing">
+    <div class="path">systems/clinic-booking/architecture.md</div>
+    <div class="title"><h1>Clinic Booking</h1><span class="version">Version 3</span></div>
+    <h2>Modules</h2>
+    <div class="module"><b>Booking</b><span>Books, moves, and cancels appointments.</span></div>
+    <div class="module"><b>Schedule</b><span>Knows when each doctor is free.</span></div>
+    <div class="module"><b>Notifications</b><span>Sends reminders through any channel: SMS now, email later.</span></div>
+    <div class="module"><b>Waitlist</b><span><mark>New in v3.</mark> Offers a freed slot to the next patient waiting.</span></div>
+    <h2>Interfaces</h2>
+<pre><span class="k">interface</span> <span class="t">NotificationChannel</span> {
+  send(to: <span class="t">Contact</span>, text: <span class="t">string</span>): <span class="t">Promise</span>&lt;<span class="t">void</span>&gt;;
+}</pre>
+  </div>
+</body>
+</html>
