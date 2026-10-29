@@ -63,6 +63,15 @@
       "about": "Design the software you're about to build with an Agent that works as your software architect. For developers and tech leads who plan with AI first, then hand the build to Claude Code or Codex.\n\nTell it what the system does and who uses it. The Agent writes the architecture: modules, interfaces as code, key flows, and the decisions behind them. It applies SOLID where the code is likely to change, and tells you when something is over-engineered. As you talk, it updates the document each time you decide something, and saves a version before any change that reshapes the design, with what changed and why. Ask what changed since an earlier version, or go back to one.",
       "repo": "https://github.com/0-bingwu-0/software-architect",
       "screenshot": "https://assets.stashbase.ai/wikis/software-architect/screenshots/cover-2e8b2c64.jpg"
+    },
+    {
+      "id": "workout-tracker",
+      "name": "Workout Tracker",
+      "category": "fitness",
+      "description": "Get a workout plan built for your goal and equipment, and let it change week by week with how you're actually doing.",
+      "about": "Track your workouts with an Agent that coaches you. For beginners and anyone getting back into training, at home or at the gym, who want a plan that fits them and keeps up as they get stronger.\n\nTell the Agent your goal, your equipment, and how many days you can train. It writes your training rules and plans four weeks of workouts in a tracker: a calendar, monthly plans and reviews, and a weight chart. After a workout, tick it off or just tell the Agent how it went, and it keeps your notes. Each week it looks at what you finished and decides which exercises step up or back.",
+      "repo": "https://github.com/0-bingwu-0/workout-tracker",
+      "screenshot": "https://assets.stashbase.ai/wikis/workout-tracker/screenshots/cover-6a49f874.jpg"
     }
   ],
   "personas": [
