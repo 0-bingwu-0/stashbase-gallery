@@ -2,6 +2,15 @@
   "updated": "2026-10-27",
   "wikis": [
     {
+      "id": "llm-wiki-for-papers",
+      "name": "LLM Wiki for Papers",
+      "category": "research",
+      "description": "See how the papers in your research area fit together, in a wiki that stays current as you add more.",
+      "about": "Turn the papers in your research area into a wiki, following Andrej Karpathy's LLM Wiki idea. For grad students and researchers who read a lot of papers in one area and want to see how they fit together.\n\nAdd papers as PDFs or arXiv links. The Agent writes a page for each paper and keeps topic pages on how they relate: who builds on whom, which results can be compared, where they disagree, and what's still open. Ask a question and the answer comes from the wiki, with sources. Good answers go back into the wiki, so it gets sharper the more you use it.",
+      "repo": "https://github.com/0-bingwu-0/llm-wiki-for-papers",
+      "screenshot": "https://assets.stashbase.ai/wikis/llm-wiki-for-papers/screenshots/cover-b3ee3508.jpg"
+    },
+    {
       "id": "workout-tracker",
       "name": "Workout Tracker",
       "category": "fitness",
@@ -36,15 +45,6 @@
       "about": "Follow new AI research and see what it changes for your work. For analysts, investors, and other professionals who need to keep up with AI but don't do research for a living.\n\nTell the Agent what you do and which views you're tracking. It pulls the papers the AI community is paying attention to from Hugging Face Daily Papers, picks out the ones that support or challenge your views, and explains why in a short digest. Ask about a trend, a view, or a paper, and get an answer from your paper library, with sources.",
       "repo": "https://github.com/0-bingwu-0/paper-tracker-for-industry",
       "screenshot": "https://assets.stashbase.ai/wikis/paper-tracker-for-industry/screenshots/cover-1247eb21.jpg"
-    },
-    {
-      "id": "llm-wiki-for-papers",
-      "name": "LLM Wiki for Papers",
-      "category": "research",
-      "description": "See how the papers in your research area fit together, in a wiki that stays current as you add more.",
-      "about": "Turn the papers in your research area into a wiki, following Andrej Karpathy's LLM Wiki idea. For grad students and researchers who read a lot of papers in one area and want to see how they fit together.\n\nAdd papers as PDFs or arXiv links. The Agent writes a page for each paper and keeps topic pages on how they relate: who builds on whom, which results can be compared, where they disagree, and what's still open. Ask a question and the answer comes from the wiki, with sources. Good answers go back into the wiki, so it gets sharper the more you use it.",
-      "repo": "https://github.com/0-bingwu-0/llm-wiki-for-papers",
-      "screenshot": "https://assets.stashbase.ai/wikis/llm-wiki-for-papers/screenshots/cover-34718704.jpg"
     },
     {
       "id": "poc-deck-builder",

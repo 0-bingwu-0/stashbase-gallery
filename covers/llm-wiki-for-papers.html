@@ -4,72 +4,13 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="cover.css">
 <style>
-  .thing { width: 1040px; padding: 56px 64px 60px; }
-  .label { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 3px; text-transform: uppercase; color: var(--deep); }
-  h1 { font-family: "Newsreader", serif; font-weight: 400; font-size: 76px; letter-spacing: -1.5px; line-height: 1.05; margin-top: 14px; }
-  .map { position: relative; height: 420px; margin-top: 44px; }
-  .map svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-  .map line { stroke: color-mix(in srgb, var(--deep) 22%, #fff); stroke-width: 3; }
-  .map line.on { stroke: var(--deep); stroke-width: 4; }
-  .node { position: absolute; transform: translate(-50%, -50%); padding: 12px 20px; border-radius: 14px; background: #fff; white-space: nowrap;
-    border: 2px solid color-mix(in srgb, var(--deep) 22%, #fff);
-    font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 22px; color: #22261f; }
-  .node.on { background: var(--deep); border-color: var(--deep); color: #fff; }
-  .edge { position: absolute; transform: translate(-50%, -50%); padding: 2px 8px; background: #fff; white-space: nowrap;
-    font-family: "Space Grotesk", sans-serif; font-weight: 500; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: #8d978c; }
-  .edge.on { color: var(--deep); font-weight: 700; }
+  /* The thing is the wiki's dashboard itself: a real screenshot at 1440 × 1080, taken at 2x. */
+  .thing { width: 960px; min-height: 0; overflow: hidden; }
+  .thing img { display: block; width: 100%; }
 </style>
 </head>
 <body class="green">
   <div class="grain"></div>
-  <div class="thing">
-    <div class="label">Wiki · Agent memory</div>
-    <h1>How the papers connect.</h1>
-    <div class="map" id="map"><svg id="lines"></svg></div>
-  </div>
-<script>
-  // Older papers on top; x and y are percentages of the map.
-  const nodes = {
-    mb:   { name: "MemoryBank", x: 14, y: 6 },
-    ga:   { name: "Generative Agents", x: 48, y: 6 },
-    mg:   { name: "MemGPT", x: 86, y: 6 },
-    lc:   { name: "LoCoMo", x: 30, y: 50 },
-    lme:  { name: "LongMemEval", x: 64, y: 50 },
-    am:   { name: "A-MEM", x: 12, y: 94 },
-    m0:   { name: "Mem0", x: 46, y: 94 },
-    zep:  { name: "Zep", x: 88, y: 94 },
-  };
-  // [from, to, type, highlighted, label position along the edge (0-1)]
-  const edges = [
-    ["am", "lc", "evaluated on", false, 0.5],
-    ["m0", "lc", "evaluated on", false, 0.5],
-    ["zep", "lme", "evaluated on", true, 0.5],
-    ["zep", "mg", "compared with", false, 0.5],
-    ["m0", "zep", "compared with", true, 0.5],
-    ["am", "mb", "compared with", false, 0.55],
-  ];
-  const map = document.getElementById("map"), svg = document.getElementById("lines");
-  const W = map.clientWidth, H = map.clientHeight;
-  const pos = id => [nodes[id].x / 100 * W, nodes[id].y / 100 * H];
-  for (const [a, b, type, on, at] of edges) {
-    const [x1, y1] = pos(a), [x2, y2] = pos(b);
-    const l = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    Object.entries({ x1, y1, x2, y2 }).forEach(([k, v]) => l.setAttribute(k, v));
-    if (on) l.classList.add("on");
-    svg.appendChild(l);
-    const t = document.createElement("div");
-    t.className = "edge" + (on ? " on" : ""); t.textContent = type;
-    t.style.left = x1 + (x2 - x1) * at + "px"; t.style.top = y1 + (y2 - y1) * at + "px";
-    map.appendChild(t);
-  }
-  const lit = new Set(edges.filter(e => e[3]).flatMap(e => [e[0], e[1]]));
-  for (const [id, n] of Object.entries(nodes)) {
-    const d = document.createElement("div");
-    d.className = "node" + (lit.has(id) ? " on" : "");
-    d.textContent = n.name;
-    d.style.left = n.x + "%"; d.style.top = n.y + "%";
-    map.appendChild(d);
-  }
-</script>
+  <div class="thing"><img src="llm-wiki-for-papers.png" alt=""></div>
 </body>
 </html>
