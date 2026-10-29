@@ -2,13 +2,13 @@
   "updated": "2026-10-27",
   "wikis": [
     {
-      "id": "resume-builder",
-      "name": "Resume Builder",
-      "category": "career",
-      "description": "Build a resume that shows what you actually did, and tailor it to every job you apply for.",
-      "about": "Build your resume with an Agent that interviews you first. For students and early-career job seekers, whether it's your first resume or your old one undersells you.\n\nStart with your current resume or LinkedIn profile. The Agent asks about what's missing, like what you did yourself and what came of it, then writes a one-page resume from your answers. Paste a job description and it writes a version for that job, picking from everything you've told it, plus a cover letter if you need one.",
-      "repo": "https://github.com/0-bingwu-0/resume-builder",
-      "screenshot": "https://assets.stashbase.ai/wikis/resume-builder/screenshots/cover-1a44d4fa.jpg"
+      "id": "workout-tracker",
+      "name": "Workout Tracker",
+      "category": "fitness",
+      "description": "Get a workout plan built for your goal and equipment, and let it change week by week with how you're actually doing.",
+      "about": "Track your workouts with an Agent that coaches you. For beginners and anyone getting back into training, at home or at the gym, who want a plan that fits them and keeps up as they get stronger.\n\nTell the Agent your goal, your equipment, and how many days you can train. It writes your training rules and plans four weeks of workouts in a tracker: a calendar, monthly plans and reviews, and a weight chart. After a workout, tick it off or just tell the Agent how it went, and it keeps your notes. Each week it looks at what you finished and decides which exercises step up or back.",
+      "repo": "https://github.com/0-bingwu-0/workout-tracker",
+      "screenshot": "https://assets.stashbase.ai/wikis/workout-tracker/screenshots/cover-59bf3f2b.jpg"
     },
     {
       "id": "linkedin-ghostwriter",
@@ -65,13 +65,13 @@
       "screenshot": "https://assets.stashbase.ai/wikis/software-architect/screenshots/cover-2e8b2c64.jpg"
     },
     {
-      "id": "workout-tracker",
-      "name": "Workout Tracker",
-      "category": "fitness",
-      "description": "Get a workout plan built for your goal and equipment, and let it change week by week with how you're actually doing.",
-      "about": "Track your workouts with an Agent that coaches you. For beginners and anyone getting back into training, at home or at the gym, who want a plan that fits them and keeps up as they get stronger.\n\nTell the Agent your goal, your equipment, and how many days you can train. It writes your training rules and plans four weeks of workouts in a tracker: a calendar, monthly plans and reviews, and a weight chart. After a workout, tick it off or just tell the Agent how it went, and it keeps your notes. Each week it looks at what you finished and decides which exercises step up or back.",
-      "repo": "https://github.com/0-bingwu-0/workout-tracker",
-      "screenshot": "https://assets.stashbase.ai/wikis/workout-tracker/screenshots/cover-6a49f874.jpg"
+      "id": "resume-builder",
+      "name": "Resume Builder",
+      "category": "career",
+      "description": "Build a resume that shows what you actually did, and tailor it to every job you apply for.",
+      "about": "Build your resume with an Agent that interviews you first. For students and early-career job seekers, whether it's your first resume or your old one undersells you.\n\nStart with your current resume or LinkedIn profile. The Agent asks about what's missing, like what you did yourself and what came of it, then writes a one-page resume from your answers. Paste a job description and it writes a version for that job, picking from everything you've told it, plus a cover letter if you need one.",
+      "repo": "https://github.com/0-bingwu-0/resume-builder",
+      "screenshot": "https://assets.stashbase.ai/wikis/resume-builder/screenshots/cover-1a44d4fa.jpg"
     }
   ],
   "personas": [
