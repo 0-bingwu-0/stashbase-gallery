@@ -2,6 +2,15 @@
   "updated": "2026-10-27",
   "wikis": [
     {
+      "id": "linkedin-ghostwriter",
+      "name": "LinkedIn Ghostwriter",
+      "category": "personal brand",
+      "description": "Turn what you build and learn each day into LinkedIn posts in your own voice, then bring them to X.",
+      "about": "Post on LinkedIn consistently with a ghostwriter that learns your background and writing style. For students, builders, and professionals who want to share what they're working on and learning.\n\nTell the Agent what you did each day. It keeps a day-by-day inbox, turns your days into post ideas, and writes the LinkedIn post in your voice, asking for the one detail only you know when it matters. Once you approve, it turns the post into an X Post or X Article, whichever fits. A dashboard shows every day you've logged and what it turned into.",
+      "repo": "https://github.com/0-bingwu-0/linkedin-ghostwriter",
+      "screenshot": "https://assets.stashbase.ai/wikis/linkedin-ghostwriter/screenshots/cover-cae11f93.jpg"
+    },
+    {
       "id": "llm-wiki-for-papers",
       "name": "LLM Wiki for Papers",
       "category": "research",
@@ -18,15 +27,6 @@
       "about": "Track your workouts with an Agent that coaches you. For beginners and anyone getting back into training, at home or at the gym, who want a plan that fits them and keeps up as they get stronger.\n\nTell the Agent your goal, your equipment, and how many days you can train. It writes your training rules and plans four weeks of workouts in a tracker: a calendar, monthly plans and reviews, and a weight chart. After a workout, tick it off or just tell the Agent how it went, and it keeps your notes. Each week it looks at what you finished and decides which exercises step up or back.",
       "repo": "https://github.com/0-bingwu-0/workout-tracker",
       "screenshot": "https://assets.stashbase.ai/wikis/workout-tracker/screenshots/cover-59bf3f2b.jpg"
-    },
-    {
-      "id": "linkedin-ghostwriter",
-      "name": "LinkedIn Ghostwriter",
-      "category": "personal brand",
-      "description": "Turn what you build and learn each day into LinkedIn posts in your own voice, then bring them to X.",
-      "about": "Post on LinkedIn consistently with a ghostwriter that learns your background and writing style. For students, builders, and professionals who want to share what they're working on and learning.\n\nTell the Agent what you did each day. It keeps a day-by-day inbox, turns your days into post ideas, and writes the LinkedIn post in your voice, asking for the one detail only you know when it matters. Once you approve, it turns the post into an X Post or X Article, whichever fits. A dashboard shows every day you've logged and what it turned into.",
-      "repo": "https://github.com/0-bingwu-0/linkedin-ghostwriter",
-      "screenshot": "https://assets.stashbase.ai/wikis/linkedin-ghostwriter/screenshots/cover-cae11f93.jpg"
     },
     {
       "id": "software-architect",
