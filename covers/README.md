@@ -16,7 +16,7 @@ sips -s format jpeg -s formatOptions 90 cover.png --out wikis/<id>/screenshots/c
 | Project | Tone and thing | Banner |
 | --- | --- | --- |
 | resume-builder | green, resume page | — |
-| linkedin-ghostwriter | blue, LinkedIn post | — |
+| linkedin-ghostwriter | blue, screenshot of the ghostwriter dashboard: the inbox check-in grid, idea bank, and posts | lavender `#c7bdea` |
 | x-content-starter | clay, post on X | — |
 | paper-tracker-for-industry | violet, weekly digest | — |
 | llm-wiki-for-papers | green, screenshot of the wiki's dashboard: topics, papers, and progress | blue `#a6cbe8` |

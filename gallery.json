@@ -23,10 +23,10 @@
       "id": "linkedin-ghostwriter",
       "name": "LinkedIn Ghostwriter",
       "category": "personal brand",
-      "description": "Share what you build and learn on LinkedIn, in your own voice, then bring it to X.",
-      "about": "Post on LinkedIn consistently with a ghostwriter that learns your background and writing style. For students, builders, and professionals who want to share what they're working on and learning.\n\nStart from something you've been building or learning, or from today's AI news on the X accounts you follow. The Agent writes the LinkedIn post and asks for the one detail only you know when it matters. Once you approve, it turns the post into an X Post or X Article, whichever fits.",
+      "description": "Turn what you build and learn each day into LinkedIn posts in your own voice, then bring them to X.",
+      "about": "Post on LinkedIn consistently with a ghostwriter that learns your background and writing style. For students, builders, and professionals who want to share what they're working on and learning.\n\nTell the Agent what you did each day. It keeps a day-by-day inbox, turns your days into post ideas, and writes the LinkedIn post in your voice, asking for the one detail only you know when it matters. Once you approve, it turns the post into an X Post or X Article, whichever fits. A dashboard shows every day you've logged and what it turned into.",
       "repo": "https://github.com/0-bingwu-0/linkedin-ghostwriter",
-      "screenshot": "https://assets.stashbase.ai/wikis/linkedin-ghostwriter/screenshots/cover-2bed991f.jpg"
+      "screenshot": "https://assets.stashbase.ai/wikis/linkedin-ghostwriter/screenshots/cover-cae11f93.jpg"
     },
     {
       "id": "software-architect",
