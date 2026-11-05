@@ -23,3 +23,4 @@ sips -s format jpeg -s formatOptions 90 cover.png --out wikis/<id>/screenshots/c
 | poc-deck-builder | blue, results slide with each success criterion against its target | — |
 | software-architect | blue, screenshot of the architecture dashboard: the diagram, versions, and decisions | soft orchid `#e6d1e6` |
 | workout-tracker | violet, screenshot of the tracker page with the first week done | teal `#b4e0db` |
+| cartoon-explainer-video | sand, a frame of the guide video: the character, a photo, and the sprite sheet it becomes | — |

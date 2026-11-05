@@ -20,6 +20,15 @@
       "screenshot": "https://assets.stashbase.ai/wikis/llm-wiki-for-papers/screenshots/cover-cb492a4a.jpg"
     },
     {
+      "id": "cartoon-explainer-video",
+      "name": "Cartoon Explainer Video",
+      "category": "video",
+      "description": "Turn an idea into a short cartoon explainer video, starring a cartoon of you.",
+      "about": "Turn an idea into a short cartoon explainer video, starring a cartoon of you. For builders and creators who want to explain an idea on X or LinkedIn without filming, editing, or recording their voice.\n\n1. Set up: say \"Set me up.\" and answer a few questions. Paste the included prompt into ChatGPT with a photo of you to get your character in 35 poses, then watch it move in a quick test.\n\n2. Make a video: say \"Make a video about …\". A script comes back first, with the parts, the headline of each, and what's on screen. Change anything you like.\n\n3. Watch it: say \"Looks good.\" and the video is built, with the camera walking from page to page and moving in on the moments that matter.\n\n4. Export: say \"Export it.\" to get an MP4, ready to post.",
+      "repo": "https://github.com/0-bingwu-0/cartoon-explainer-video",
+      "screenshot": "https://assets.stashbase.ai/wikis/cartoon-explainer-video/screenshots/cover-72167125.jpg"
+    },
+    {
       "id": "workout-tracker",
       "name": "Workout Tracker",
       "category": "fitness",
