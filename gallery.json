@@ -15,9 +15,9 @@
       "name": "LLM Wiki for Papers",
       "category": "research",
       "description": "See how the papers in your research area fit together, in a wiki that stays current as you add more.",
-      "about": "Turn the papers in your research area into a wiki, following Andrej Karpathy's LLM Wiki idea. For grad students and researchers who read a lot of papers in one area and want to see how they fit together.\n\nAdd papers as PDFs or arXiv links. The Agent writes a page for each paper and keeps topic pages on how they relate: who builds on whom, which results can be compared, where they disagree, and what's still open. Ask a question and the answer comes from the wiki, with sources. Good answers go back into the wiki, so it gets sharper the more you use it.",
+      "about": "Turn the papers in your research area into a wiki, following Andrej Karpathy's LLM Wiki idea. For grad students and researchers who read a lot of papers in one area and want to see how they fit together.\n\n1. Set up: say \"Set me up.\" and answer four quick questions about your area, your current work, and the papers you have. It builds a wiki from your papers.\n\n2. Add papers: drop PDFs into the library folder and say \"Add the new papers.\", or paste a link: \"Add arxiv.org/abs/…\". Each paper gets its own page, its connections to the others, and a place in the topic pages: who builds on whom, which results can be compared, where they disagree.\n\n3. Ask: \"How do … and … compare?\" The answer comes from the wiki, with sources. What you settle is kept: findings about the papers go back into the wiki, and your own ideas and drafts, like a related work section, go into your notes.\n\n4. Check: say \"Check the wiki.\" every so often. It fixes conflicts and missing connections, and suggests the papers to add next.\n\nA dashboard shows your topics and how settled each one is, every paper with its main point and connections, what you're working on, and how the wiki has grown.",
       "repo": "https://github.com/0-bingwu-0/llm-wiki-for-papers",
-      "screenshot": "https://assets.stashbase.ai/wikis/llm-wiki-for-papers/screenshots/cover-b3ee3508.jpg"
+      "screenshot": "https://assets.stashbase.ai/wikis/llm-wiki-for-papers/screenshots/cover-cb492a4a.jpg"
     },
     {
       "id": "workout-tracker",
@@ -35,7 +35,7 @@
       "description": "Talk through your software design and get an architecture a coding agent can build from, kept current as you change your mind.",
       "about": "Design the software you're about to build with an Agent that works as your software architect. For developers and tech leads who plan with AI first, then hand the build to Claude Code or Codex.\n\nTell it what the system does and who uses it. The Agent writes the architecture: modules, interfaces as code, key flows, and the decisions behind them. It applies SOLID where the code is likely to change, and tells you when something is over-engineered. As you talk, it updates the design each time you decide something, and saves a version before any big change. A dashboard draws the design as a diagram: click a module to see what it depends on, or switch versions to see what each decision added or changed.",
       "repo": "https://github.com/0-bingwu-0/software-architect",
-      "screenshot": "https://assets.stashbase.ai/wikis/software-architect/screenshots/cover-dfcffc3a.jpg"
+      "screenshot": "https://assets.stashbase.ai/wikis/software-architect/screenshots/cover-e7bf9f26.jpg"
     },
     {
       "id": "x-content-starter",
