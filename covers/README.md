@@ -21,5 +21,5 @@ sips -s format jpeg -s formatOptions 90 cover.png --out wikis/<id>/screenshots/c
 | paper-tracker-for-industry | violet, weekly digest | — |
 | llm-wiki-for-papers | green, screenshot of the wiki's dashboard: topics, papers, and progress | blue `#a6cbe8` |
 | poc-deck-builder | blue, results slide with each success criterion against its target | — |
-| software-architect | clay, screenshot of the architecture dashboard: the diagram, versions, and decisions | soft orchid `#e6d1e6` |
+| software-architect | blue, screenshot of the architecture dashboard: the diagram, versions, and decisions | soft orchid `#e6d1e6` |
 | workout-tracker | violet, screenshot of the tracker page with the first week done | teal `#b4e0db` |
