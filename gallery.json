@@ -26,16 +26,7 @@
       "description": "Turn an idea into a short cartoon explainer video, starring a cartoon of you.",
       "about": "Turn an idea into a short cartoon explainer video, starring a cartoon of you. For builders and creators who want to explain an idea on X or LinkedIn without filming, editing, or recording their voice.\n\n1. Set up: say \"Set me up.\" and answer a few questions. Paste the included prompt into ChatGPT with a photo of you to get your character in 35 poses, then watch it move in a quick test.\n\n2. Make a video: say \"Make a video about …\". A script comes back first, with the parts, the headline of each, and what's on screen. Change anything you like.\n\n3. Watch it: say \"Looks good.\" and the video is built, with the camera walking from page to page and moving in on the moments that matter.\n\n4. Export: say \"Export it.\" to get an MP4, ready to post.",
       "repo": "https://github.com/0-bingwu-0/cartoon-explainer-video",
-      "screenshot": "https://assets.stashbase.ai/wikis/cartoon-explainer-video/screenshots/cover-72167125.jpg"
-    },
-    {
-      "id": "workout-tracker",
-      "name": "Workout Tracker",
-      "category": "fitness",
-      "description": "Get a workout plan built for your goal and equipment, and let it change week by week with how you're actually doing.",
-      "about": "Track your workouts with an Agent that coaches you. For beginners and anyone getting back into training, at home or at the gym, who want a plan that fits them and keeps up as they get stronger.\n\nTell the Agent your goal, your equipment, and how many days you can train. It writes your training rules and plans four weeks of workouts in a tracker: a calendar, monthly plans and reviews, and a weight chart. After a workout, tick it off or just tell the Agent how it went, and it keeps your notes. Each week it looks at what you finished and decides which exercises step up or back.",
-      "repo": "https://github.com/0-bingwu-0/workout-tracker",
-      "screenshot": "https://assets.stashbase.ai/wikis/workout-tracker/screenshots/cover-59bf3f2b.jpg"
+      "screenshot": "https://assets.stashbase.ai/wikis/cartoon-explainer-video/screenshots/cover-6853422b.jpg"
     },
     {
       "id": "software-architect",
@@ -45,6 +36,15 @@
       "about": "Design the software you're about to build with an Agent that works as your software architect. For developers and tech leads who plan with AI first, then hand the build to Claude Code or Codex.\n\nTell it what the system does and who uses it. The Agent writes the architecture: modules, interfaces as code, key flows, and the decisions behind them. It applies SOLID where the code is likely to change, and tells you when something is over-engineered. As you talk, it updates the design each time you decide something, and saves a version before any big change. A dashboard draws the design as a diagram: click a module to see what it depends on, or switch versions to see what each decision added or changed.",
       "repo": "https://github.com/0-bingwu-0/software-architect",
       "screenshot": "https://assets.stashbase.ai/wikis/software-architect/screenshots/cover-22056abf.jpg"
+    },
+    {
+      "id": "workout-tracker",
+      "name": "Workout Tracker",
+      "category": "fitness",
+      "description": "Get a workout plan built for your goal and equipment, and let it change week by week with how you're actually doing.",
+      "about": "Track your workouts with an Agent that coaches you. For beginners and anyone getting back into training, at home or at the gym, who want a plan that fits them and keeps up as they get stronger.\n\nTell the Agent your goal, your equipment, and how many days you can train. It writes your training rules and plans four weeks of workouts in a tracker: a calendar, monthly plans and reviews, and a weight chart. After a workout, tick it off or just tell the Agent how it went, and it keeps your notes. Each week it looks at what you finished and decides which exercises step up or back.",
+      "repo": "https://github.com/0-bingwu-0/workout-tracker",
+      "screenshot": "https://assets.stashbase.ai/wikis/workout-tracker/screenshots/cover-59bf3f2b.jpg"
     },
     {
       "id": "x-content-starter",
